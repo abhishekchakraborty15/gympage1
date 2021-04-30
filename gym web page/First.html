@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM WEBPAGE</title>
+    <style>
+        body {
+            color: honeydew;
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+            background: url('pics/bgpic2.jpg');
+            background-repeat: no-repeat;
+            background-size: 1368px 1000px;
+            /* background-position: top; */
+        }
+
+        .logo {
+            /* border:2px solid chocolate; */
+            /* background-color: blueviolet; */
+            padding: 0px;
+            display: inline-block;
+            position: absolute;
+            left: 85px;
+            top: 25px;
+            color: white;
+            padding: 5px 5px;
+        }
+
+        .logo img {
+            width: 30px;
+            height: 35px;
+            padding-left: 40px;
+        }
+
+        .invert_effect {
+            filter: invert(100%);
+        }
+
+        /* .logo_text{
+            fon
+        } */
+        .nav {
+            /* border:2px solid rgb(60, 210, 30); */
+            display: block;
+            width: 38%;
+            /* background-color:yellow; */
+            margin: 15px auto;
+            color: white;
+
+        }
+
+        .btn {
+            /* border:2px solid rgb(60, 210, 30); */
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+            display: inline-block;
+            /* background-color:rgb(255, 0, 234); */
+            position: absolute;
+            right: 20px;
+            top: 29px;
+            color: white;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            padding-left: 17px;
+            font-size: 20px;
+        }
+
+        .navbar li a:hover {
+            color: grey;
+            text-decoration: underline;
+            font-size: 18px;
+
+        }
+
+        .bot {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px 6px;
+            color: white;
+            background: black;
+            padding: 1px 9px;
+            font-size: 12px;
+            font-size: 12px;
+            border-color: grey;
+            border-radius: 12px;
+            border-width: 1.89px;
+        }
+
+        .bot:hover {
+            cursor: pointer;
+            background: grey;
+        }
+
+        .large {
+            color: red;
+            border: 5px solid red;
+            padding: 7px 25px;
+            display: inline;
+            position: absolute;
+            left: 130px;
+            top: 150px;
+            font-size: 80px;
+        }
+
+        .container {
+            border: 2px solid rgb(255, 237, 239);
+            border-radius: 50px;
+            display: inline;
+            position: absolute;
+            left: 150px;
+            top: 335px;
+            padding: 40px 75px;
+            background-color: rgba(0, 0, 0, 0.2);
+           
+        }
+        .formgroup input{
+            color: rgb(39, 37, 37);
+        }
+        .formgroup label{
+            color: rgb(255, 255, 255);
+        }
+        .formgroup{
+            color: rgb(255, 255, 255);
+        }
+        .sale{
+            position: absolute;
+            border: 5px solid rgb(238, 255, 0);
+            top: 340px;
+            left: 500px;
+            padding: 40PX 60PX;
+            color:  rgb(238, 255, 0);
+            font-size: 60px;
+        }
+        .submit{
+            position: absolute;
+            left: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="stick">
+        <div class="logo">
+            <img class="invert_effect" src="pics/logo.png" alt="">
+            <div class="logo_text">FITNESS POWER</div>
+        </div>
+        <div class="nav">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">FITNESS TEAM</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+
+        </div>
+        <div class="btn">
+            <button class="bot">CONTACT US</button>
+            <button class="bot">EMAIL US</button>
+        </div>
+    </header>
+    <div class="large">ADMISSION OPEN JOIN NOW</div>
+    <div class="container">
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" placeholder="NAME">
+            </div>
+            <div class="formgroup">
+                 <input type="number" placeholder="AGE">
+            </div>
+            <div class="formgroup">
+             <input type="number" placeholder="WEIGHT">
+            </div>
+            <div class="formgroup">
+                 <input type="number" placeholder="HEIGHT">
+            </div>
+            <div class="formgroup">
+                GENDER: <br>
+                <form>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </form>
+            </div>
+            <div class="submit">
+                <button class="bot">SUBMIT</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="sale">JOIN NOW FOR UPTO <br> 50% OFF</div>
+
+</body>
+
+</html>
